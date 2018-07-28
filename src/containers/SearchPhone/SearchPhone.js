@@ -47,9 +47,7 @@ class SearchPhone extends Component {
     const temp = this;
     axios.get(apiUrl, {
       params: {
-        page: this.props.telephones.data
-          ? this.props.telephones.meta.page
-          : 1,
+        page: 1,
         perPage: event.target.value % 1 == 0 ? event.target.value : 100
       }
     }).then(function(response) {
