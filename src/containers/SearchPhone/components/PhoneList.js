@@ -18,12 +18,14 @@ const ConnectedList = ({telephones}) => (
       <ul className="list-group list-group-flush">
 
         {
-          telephones.map(el => (
-            <li className="list-group-item">
-              <div className="item">{el.number}</div>
-              <div>${el.cost.toFixed(2)}</div>
-            </li>
-          ))
+          telephones.length >= 1
+            ? telephones.map(el => (
+              <li className="list-group-item">
+                <div className="item">{el.number}</div>
+                <div>${el.cost.toFixed(2)}</div>
+              </li>
+            ))
+            : <p>List not Available</p>
         }
       </ul>
     </div>
