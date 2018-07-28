@@ -6,5 +6,5 @@
   - To run this project as development mode, just run:
   ```npm run start:dev```
   
-  - To build this project for production mode(warning, the mocked API will not work, as it's mode mean only to work on production api on external projects), just run:
+  - To build this project for production mode(warning, the mocked API will not work, as production mode mean only to work on production APIs on external projects), just run:
   ```npm run build```
