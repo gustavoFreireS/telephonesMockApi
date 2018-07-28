@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Sunflower';
+  src: url("../fonts/Sunflower-light.ttf");
+}
+@font-face {
+  font-family: 'Sunflower';
+  src: url("../fonts/Sunflower-bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d2d2d2;
+  font-family: Sunflower;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &:nth-child(even) {
+    background-color: #f6f6f6;
+  }
+
+  .item {
+    margin: 7px;
+  }
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 600px;
+    top: 0;
+    width: 1px;
+    background-color: #ddd;
+    display: inline;
+    float: right;
+    position: absolute;
+  }
+
+  .item {
+    padding: 10px 10px 10px 25px;
+  }
+}
+
+.container-list {
+  margin: 0 auto;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.list-group {
+  height: 443px;
+  overflow: scroll;
+  padding: 0;
+  margin: 0;
+}
+
+.paginator {
+  display: flex;
+  align-self: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  button {
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 2px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 2px 3px #fff;
+    }
+
+    &:disabled {
+      background-color: #aaa;
+    }
+  }
+
+  .page {
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    line-height: 2.9em;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+}
+
+.itensSel {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  margin: 5px;
+
+  input {
+    border: 0;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 2px 1px #000;
+    }
+  }
+}
+
+.pageContainer {
+  width: 600px;
+  margin: 50px auto 0;
+}
