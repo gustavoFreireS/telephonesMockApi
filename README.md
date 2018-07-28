@@ -7,4 +7,4 @@
   ```npm run start:dev```
   
   - To build this project for production mode(warning, the mocked API will not work, as it's mode mean only to work on production api on external projects), just run:
-  ```npm run start:dev```
+  ```npm run build```
